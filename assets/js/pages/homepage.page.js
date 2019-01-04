@@ -12,9 +12,11 @@ parasails.registerPage('homepage', {
   beforeMount: function() {
     // Attach any initial data from the server.
     _.extend(this, SAILS_LOCALS);
+    console.log('Home page about to be mounted');
   },
-  mounted: async function(){
+  mounted: async function() {
     this._setHeroHeight();
+    console.log('Home page mounted');
   },
 
   //  ╦╔╗╔╔╦╗╔═╗╦═╗╔═╗╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
